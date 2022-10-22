@@ -1,0 +1,143 @@
+:root {
+    --border-radius: 0.3rem
+}
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800&display=swap");
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    background-color: rgb(200, 200, 243);
+}
+
+header {
+    display: flex;
+    width: 100%;
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+    background-color: aqua;
+    height: 80px;
+  
+}
+
+main{
+ margin: 20px  auto;
+ width: 94%;   
+}
+
+
+h1 {
+    font-size: 70px;
+    max-width: 70%;
+    background-color: brown;
+    
+}
+h5 {
+    font-size: 20px;
+    
+    
+}
+
+.searchContainer {
+    background-color: blueviolet;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    
+    
+
+}
+
+.searchInput {
+    display: flex;
+    
+}
+input {
+
+    border-radius: var(--border-radius);
+}
+.alternativeContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    background-color: blue;
+    margin: 0 0 20px 0;
+
+}
+#alt-buttons{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 90%;
+    display: block;
+    margin: 5px 0;
+border-radius: var(--border-radius);
+}
+
+
+.forecast-container {
+background-color: aquamarine;
+display: flex;
+flex-direction: column;
+height: 120%;
+justify-content: center;
+align-items: center;
+}
+
+.card-forecast {
+    background-color: red;
+    width: 100%;
+    display: flex;
+}
+
+.card{
+    background-color: green;
+    border: 2px solid white;
+    width: 20%;
+}
+
+
+
+
+/* new backup code */
+
+/* main{
+    display: grid;
+    height: 85vh;
+    grid-template-areas: 
+    "search current current"
+    "history current current"
+    "history forecast forecast"
+    "history forecast forecast"
+    ". forecast forecast"
+}
+
+.search{
+    grid-area: search;
+    background-color: red
+}
+
+.history{
+    grid-area: history;
+    background-color: pink;
+}
+
+.current{
+    grid-area: current;
+    background-color: blue
+}
+
+.forecast{
+    grid-area: forecast;
+    background-color: green
+}
+ */

@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/CSS/style.css">
-</head>
-<body>
-    <!--search bar input-->
-    <div class="input"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5Day Weather Forecast</title>
+    <link rel="reset" href="./assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="headerContainer">
+      <h1 class="header">Weather Dashboard</h1>
+    </header>
+    <main class="flex-row justify-content">
+      <div class="col 12 col md-4">
+        <!-- SEARCH FUCKING BUTTON -->
+        <section class="searchContainer">
+          <h3 class="input">Search for a City</h3>
+          <div class="searchInput">
+            <input
+              id="city-input"
+              type="text"
+              class="formOrg"
+              placeholder="enter city HERE"
+            />
+            <div class="inputSumbit">
+              <button
+                class="btn fa-brands fa-searchengin col-md-1"
+                type="button"
+                id="search-button"
+              >
+                Fuck
+              </button>
+            </div>
+          </div>
+        </section>
+        <aside class="alternativeContainer">
+          <h3 class="alt-header">Alternative Searches</h3>
+          <div id="alt-buttons" class="alt-body">
+            <!-- <h4 class="btn">Atlanta</h4>
+        <h4 class="btn">Atlanta</h4>
+        <h4 class="btn">Atlanta</h4>
+        <h4 class="btn">Atlanta</h4>
+        <h4 class="btn">Atlanta</h4>
+        <h4 class="btn">Atlanta</h4> -->
+            <!-- <button class="btn" type="button">Atlanta</button>
+            <button class="btn" type="button">Atlanta</button>
+            <button class="btn" type="button">Atlanta</button>
+            <button class="btn" type="button">Atlanta</button>
+            <button class="btn" type="button">Atlanta</button>
+            <button class="btn" type="button">Atlanta</button> -->
+          </div>
+        </aside>
+      </div>
+      <section class="forecast-container">
+        <h2 class="5day-header">5 Day Forecast Biotch</h2>
+        <div class="card-forecast">
+          <div class="card forecast-body m-2 rounded">YOOO</div>
+          <div class="card forecast-body m-2 rounded">YOOO</div>
+          <div class="card forecast-body m-2 rounded">YOOO</div>
+          <div class="card forecast-body m-2 rounded">YOOO</div>
+          <div class="card forecast-body m-2 rounded">YOOO</div>
+          <!-- <div class="forecast-body">Date 1 Card</div>
+          <div
+            class="forcast-footer d-flex align-items-center justify-content-between"
+          >
+            <a class="details" href="#">View Details</a>
+          </div>
+          <div class="forecast-body col-2">Date 1 Card</div>
+          <div
+            class="forcast-footer d-flex align-items-center justify-content-between"
+          >
+            <a class="details" href="#">View Details</a>
+          </div>
+          <div class="forecast-body col-2">Date 1 Card</div>
+          <div
+            class="forcast-footer d-flex align-items-center justify-content-between"
+          >
+            <a class="details" href="#">View Details</a>
+          </div>
+          <div class="forecast-body col-2">Date 1 Card</div>
+          <div
+            class="forcast-footer d-flex align-items-center justify-content-between"
+          >
+            <a class="details" href="#">View Details</a>
+          </div>
+          <div class="forecast-body col-2">Date 1 Card</div>
+          <div
+            class="forcast-footer d-flex align-items-center justify-content-between"
+          >
+            <a class="details" href="#">View Details</a>
+          </div> -->
+      </section>
+    </main>
+
+
+
+    
+
     <script src="./assets/JS/script.js"></script>
-</body>
+  </body>
 </html>
