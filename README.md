@@ -12,3 +12,4 @@ N/A
 ## Mock-Up
 
 
+![weatherdashboard](https://user-images.githubusercontent.com/112679225/197904552-9d5fa379-5420-438a-b047-f7e7ab540b3d.jpg)
