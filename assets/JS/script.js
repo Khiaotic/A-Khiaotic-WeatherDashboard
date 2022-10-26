@@ -1,11 +1,12 @@
 let APIkey = "34f289ed24b76bc42b2be141895213ae"
 var searchButton = document.getElementById('search-button')
-
+var searchBox =  document.getElementById('city-input')
 function getValue(event){
     event.preventDefault()
     console.log(event.target)
-    if(!event.target.id){
-        return searchAPI(event.target.innerHTML)
+    console.log(event.target.id)
+    if(event.target.id === "search-button"){
+        return searchAPI(searchBox.value)
     }
     var inputValue = document.getElementById('city-input').value
     return
@@ -17,15 +18,37 @@ function getValue(event){
 }
 
 
-function searchAPI(city){
-    url = https:''/// + city+ apiKey
-}
-    fetch(url).then(response=>{
-        if error.throw error
-    }).then(data=> {
+function searchAPI(inputValue){
+    // console.log("hit", inputValue) 
+    let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" 
+    + inputValue
+    + "&units=imperial&appid="
+    + APIkey 
 
+    fetch(queryURL)
+    .then (function(response){
+        return response.json();
     })
-)
+    .then(function(data){
+        console.log(data)
+        // for (var i = 0; i<5;  i++){
+        //     weather
+        // }
+    })
+    function displayWeather (data){
+const {name} = data;
+const {icon, description} =  data.weather[0];
+const  {temp, humidity}  = data.main;
+const {speed} = data.wind;
+console.log(name, icon, description, temp, humidity,speed)
+document.querySelector(".inputValue").innerText  = "Forecast  in" +  name;
+    }
+}
+        
+    //   let lat = response.data.coord.lat;
+    //   let  lon  =  response.data.coord.lon;
+    //   let UVQueryURL
+  
 
 function addToLocalStorage(randomCity){
     var pastSearches = JSON.parse(localStorage.getItem('history')) || []
