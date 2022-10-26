@@ -1,5 +1,9 @@
 # A-Khiaotic-WeatherDashboard
 
+deployed application:  https://khiaotic.github.io/A-Khiaotic-WeatherDashboard/
+
+git hub repo: https://github.com/Khiaotic/A-Khiaotic-WeatherDashboard
+
 ## Description
 an application that showcases the current weather and a 5 days forecast.
 The  city name,  data, representation of weather conditions icons, temperature, humidity, and wind speed.
